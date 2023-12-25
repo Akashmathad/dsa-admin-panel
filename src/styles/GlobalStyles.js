@@ -53,44 +53,57 @@ html{
 :root {
    &.light-mode {
   /* Grey */
-  --color-grey-0: #fff;
-  --color-grey-50: #f9fafb;
-  --color-grey-100: #f3f4f6;
-  --color-grey-200: #e5e7eb;
-  --color-grey-300: #d1d5db;
-  --color-grey-400: #9ca3af;
-  --color-grey-500: #6b7280;
-  --color-grey-600: #4b5563;
-  --color-grey-700: #374151;
-  --color-grey-800: #1f2937;
-  --color-grey-900: #111827;
-
-  --color-green-700: #86efac;
---color-green-600: #4ade80;
---color-green-500:#22c55e;
---color-green-400:#16a34a;
---color-green-300:#15803d;
---color-yellow-100: #854d0e;
---color-yellow-500: #eab308;
---color-yellow-700: #fef9c3;
+  --color-grey-50: #fafafa;
+  --color-grey-100: #f5f5f5;
+  --color-grey-200: #e5e5e5;
+  --color-grey-300: #d4d4d4;
+  --color-grey-400: #a3a3a3;
+  --color-grey-500: #737373;
+  --color-grey-600: #525252;
+  --color-grey-700: #404040;
+  --color-grey-800: #262626;
+  --color-grey-900: #171717;
+  --color-grey-950: #0a0a0a;
+  
 
 
+  --color-blue-200: #bae6fd;
+  --color-blue-300: #7dd3fc;
+  --color-blue-400: #38bdf8;
+  --color-blue-500: #0ea5e9;
+  --color-blue-600: #0284c7;
+  --color-blue-700: #0369a1;
+  --color-blue-800: #075985;
 
---color-red-700: #fca5a5;
---color-red-600: #f87171;
---color-red-500: #ef4444;
---color-red-400: #dc2626;
---color-red-300: #b91c1c;
 
-  --color-brand-900: #e0e7ff;
-  --color-brand-800: #c7d2fe;
-  --color-brand-700: #a5b4fc;
-  --color-brand-600: #818cf8;
-  --color-brand-500: #6366f1;
-  --color-brand-400: #4f46e5;
-  --color-brand-300: #4338ca;
-  --color-brand-200: #3730a3;
-  --color-brand-100: #312e81;
+  --color-red-300: #fecaca;
+  --color-red-300: #fca5a5;
+  --color-red-400: #f87171;
+  --color-red-500: #ef4444;
+  --color-red-600: #dc2626;
+  --color-red-700: #b91c1c;
+  --color-red-700: #991b1b;
+
+
+  --color-green-300: #bbf7d0;
+  --color-green-300: #86efac;
+  --color-green-400: #4ade80;
+  --color-green-500: #22c55e;
+  --color-green-600: #16a34a;
+  --color-green-700: #15803d;
+  --color-green-700: #166534;
+
+
+
+  --color-brand-200: #fde68a;
+  --color-brand-300: #fcd34d;
+  --color-brand-400: #fbbf24;
+  --color-brand-500: #f59e0b;
+  --color-brand-600: #d97706;
+  --color-brand-700: #92400e;
+  --color-brand-800: #92400e;
+
+
 
   --backdrop-color: rgba(255, 255, 255, 0.1);
 
@@ -104,45 +117,57 @@ html{
   }
   
   &,&.dark-mode {
-    --color-grey-0: #18212f;
---color-grey-50: #111827;
---color-grey-100: #1f2937;
---color-grey-200: #374151;
---color-grey-300: #4b5563;
---color-grey-400: #6b7280;
---color-grey-500: #9ca3af;
---color-grey-600: #d1d5db;
---color-grey-700: #e5e7eb;
---color-grey-800: #f3f4f6;
---color-grey-900: #f9fafb;
-
---color-green-300: #86efac;
---color-green-400: #4ade80;
---color-green-500:#22c55e;
---color-green-600:#16a34a;
---color-green-700:#15803d;
---color-yellow-100: #854d0e;
---color-yellow-500: #eab308;
---color-yellow-700: #fef9c3;
+    --color-grey-950: #fafafa;
+  --color-grey-900: #f5f5f5;
+  --color-grey-800: #e5e5e5;
+  --color-grey-700: #d4d4d4;
+  --color-grey-600: #a3a3a3;
+  --color-grey-500: #737373;
+  --color-grey-400: #525252;
+  --color-grey-300: #404040;
+  --color-grey-200: #262626;
+  --color-grey-100: #171717;
+  --color-grey-50: #0a0a0a;
+  
 
 
+  --color-blue-800: #bae6fd;
+  --color-blue-700: #7dd3fc;
+  --color-blue-600: #38bdf8;
+  --color-blue-500: #0ea5e9;
+  --color-blue-400: #0284c7;
+  --color-blue-300: #0369a1;
+  --color-blue-200: #075985;
 
---color-red-300: #fca5a5;
---color-red-400: #f87171;
---color-red-500: #ef4444;
---color-red-600: #dc2626;
---color-red-700: #b91c1c;
---color-red-800: #991b1b;
 
---color-brand-50: #eef2ff;
-  --color-brand-100: #e0e7ff;
-  --color-brand-200: #c7d2fe;
-  --color-brand-400: #818cf8;
-  --color-brand-500: #6366f1;
-  --color-brand-600: #4f46e5;
-  --color-brand-700: #4338ca;
-  --color-brand-800: #3730a3;
-  --color-brand-900: #312e81;
+  --color-red-800: #fecaca;
+  --color-red-700: #fca5a5;
+  --color-red-600: #f87171;
+  --color-red-500: #ef4444;
+  --color-red-400: #dc2626;
+  --color-red-300: #b91c1c;
+  --color-red-200: #991b1b;
+
+
+  --color-green-800: #bbf7d0;
+  --color-green-700: #86efac;
+  --color-green-600: #4ade80;
+  --color-green-500: #22c55e;
+  --color-green-400: #16a34a;
+  --color-green-300: #15803d;
+  --color-green-200: #166534;
+
+
+
+  --color-brand-800: #fde68a;
+  --color-brand-700: #fcd34d;
+  --color-brand-600: #fbbf24;
+  --color-brand-500: #f59e0b;
+  --color-brand-400: #d97706;
+  --color-brand-300: #92400e;
+  --color-brand-200: #92400e;
+
+
 
 --backdrop-color: rgba(0, 0, 0, 0.3);
 
