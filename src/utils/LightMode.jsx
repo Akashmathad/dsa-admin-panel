@@ -13,7 +13,10 @@ function LightMode() {
 }
 
 const Button = styled.div`
-  color: var(--color-grey-500);
+  padding: 7px;
+  background-color: var(--color-brand-400);
+  border-radius: var(--border-radius-lg);
+  color: var(--color-grey-50);
   cursor: pointer;
   font-size: 2.4rem;
   display: flex;

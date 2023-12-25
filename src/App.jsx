@@ -1,27 +1,27 @@
-import { styled } from 'styled-components';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import GlobalStyles from './styles/GlobalStyles';
-import LightMode from './utils/LightMode';
-import { HiOutlineLogout } from 'react-icons/hi';
+import AppLayout from './utils/AppLayout';
+import HomePage from './pages/HomePage';
+import DSAPage from './pages/DSAPage';
+import ResultsPage from './pages/ResultsPage';
+import OthersPage from './pages/OthersPage';
+import AptitudePage from './pages/AptitudePage';
 
 function App() {
   return (
-    <AppContainer>
+    <BrowserRouter>
       <GlobalStyles />
-      <div className="header">
-        <p className="header-logo">DSA Admin Panel</p>
-        <div className="header-items-box">
-          <p className="header-username">@Akash Mathad</p>
-          <LightMode />
-          <HiOutlineLogout />
-        </div>
-      </div>
-    </AppContainer>
+      <Routes>
+        <Route element={<AppLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/dsa" element={<DSAPage />} />
+          <Route path="/aptitude" element={<AptitudePage />} />
+          <Route path="/results" element={<ResultsPage />} />
+          <Route path="/others" element={<OthersPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-const AppContainer = styled.div`
-  width: 100%;
-  height: 100vh;
-`;
 
 export default App;
