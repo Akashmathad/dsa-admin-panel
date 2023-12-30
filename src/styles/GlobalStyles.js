@@ -60,8 +60,8 @@ html{
 :root {
    &.light-mode {
   /* Grey */
-  --color-grey-50: #f3f4f6;
-  --color-grey-100: #e5e5e5;
+  --color-grey-50: #fafafa;
+  --color-grey-100: #f5f5f5;
   --color-grey-200: #e5e5e5;
   --color-grey-300: #d4d4d4;
   --color-grey-400: #a3a3a3;
@@ -128,8 +128,8 @@ html{
   }
   
   &,&.dark-mode {
-    --color-grey-950: #f9fafb;
-  --color-grey-900: #f3f4f6;
+    --color-grey-950: #fafafa;
+  --color-grey-900: #f5f5f5;
   --color-grey-800: #e5e5e5;
   --color-grey-700: #d4d4d4;
   --color-grey-600: #a3a3a3;
@@ -257,6 +257,35 @@ html{
   font-size: 4.4rem;
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+//general styles
+
+.container{
+  display: flex;
+  gap: 2.4rem;
+  
+}
+
+.card{
+  width: 35rem;
+  height: 20rem;
+  text-decoration: none;
+  background-color: var(--color-brand-500);
+  display: inline-block;
+  color: var(--color-grey-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.8rem;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: all 0.3s;
+  box-shadow: var(--shadow-lg);
+
+  &:hover{
+    transform: scale(1.05);
+  }
 }
 
 `;

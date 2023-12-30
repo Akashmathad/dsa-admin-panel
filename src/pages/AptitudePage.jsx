@@ -2,10 +2,14 @@ import { NavLink, Outlet } from 'react-router-dom';
 
 function AptitudePage() {
   return (
-    <div>
-      <NavLink to="/aptitude/createAptitudeContest">Create Contest</NavLink>
-      <NavLink to="/aptitude/questionReview">Questions</NavLink>
-      <NavLink to="/aptitude/availableAptitudeContests">
+    <div className="container">
+      <NavLink to="/aptitude/createAptitudeContest" className="card">
+        Create Contest
+      </NavLink>
+      <NavLink to="/aptitude/questionReview" className="card">
+        Questions
+      </NavLink>
+      <NavLink to="/aptitude/availableAptitudeContests" className="card">
         Available contests
       </NavLink>
     </div>

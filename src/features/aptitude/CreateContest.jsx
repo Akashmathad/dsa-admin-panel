@@ -1,5 +1,5 @@
 import { styled } from 'styled-components';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import BackButton from './../../utils/BackButton';
 function CreateContest() {
   const [questions, setQuestions] = useState(0);
@@ -93,7 +93,7 @@ const CreateContestContainer = styled.div`
   background-color: var(--color-grey-100);
   padding: 2rem;
   border-radius: var(--border-radius-lg);
-
+  box-shadow: var(--shadow-lg);
   .question-input-boxes {
     display: flex;
     flex-direction: column;
