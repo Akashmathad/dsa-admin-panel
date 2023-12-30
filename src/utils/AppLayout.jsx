@@ -89,14 +89,14 @@ const AppLayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
-  padding: 2.4rem;
+  padding: 1.2rem 2.4rem;
 
   .header {
     display: flex;
-    padding: 1.8rem 2.4rem;
+    padding: 1.4rem 3.2rem;
     justify-content: space-between;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
     background-color: var(--color-grey-100);
     border-radius: var(--border-radius-md);
 
@@ -130,7 +130,10 @@ const AppLayoutContainer = styled.div`
     width: 100%;
     flex-grow: 1;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1.2rem;
+    position: relative;
   }
 
   .outlet {
@@ -140,9 +143,9 @@ const AppLayoutContainer = styled.div`
   }
 
   .footer {
-    padding: 1.2rem 2.4rem;
+    padding: 1.2rem 3.2rem;
     color: var(--color-grey-700);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     background-color: var(--color-grey-100);
     border-radius: var(--border-radius-md);
     display: flex;

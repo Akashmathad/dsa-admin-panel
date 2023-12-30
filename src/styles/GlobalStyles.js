@@ -226,6 +226,39 @@ html{
     }
   }
 
+//buttons
+
+.btn{
+  padding: 9px 15px;
+  border-radius: var(--border-radius-lg);
+  font-size: 1.8rem;
+  font-family: inherit;
+  background-color: var(--color-brand-400);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: inherit;
+
+  &:hover{
+    background-color: var(--color-brand-500);
+  }
+}
+
+.back-btn-top{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+//headings
+
+.heading-primary{
+  color: var(--color-brand-500);
+  font-size: 4.4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
 `;
 
 export default GlobalStyles;
