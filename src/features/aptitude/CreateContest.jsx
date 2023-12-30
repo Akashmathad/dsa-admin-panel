@@ -1,20 +1,22 @@
 import { styled } from 'styled-components';
 import { useState } from 'react';
 import BackButton from './../../utils/BackButton';
+
+export const modules = [
+  'Number system, HCF-LCM and Decimal Fractions, Simplification, Percentages',
+  'Profit-Loss and Discounts, Simple - Compound Interest, Averages, Alligations and Mixtures',
+  'Ratios-Proportions ans Variations, Partnership, Time and work, Time-speed and Distance',
+  'Trains-Boats-Streams-Races, Permutation and combination, Probablity, Data Interpretation, Ages',
+  'Blood Relations, Direction sense Test, Series',
+  'Coding and Decoding, Analogy, Seating Arrangement,Data Arrangement',
+  'Clocks, Calendars, syllogisms, Data Sufficiency',
+  'Articles and Prepositions, Subject verb Agreement, Change of speech',
+  'Change of voice, Sentence Correction, Sentence Completion',
+  'Cloze Test, Ordering of Sentences, Reading Comprehension, Critical Reasoning',
+];
+
 function CreateContest() {
   const [questions, setQuestions] = useState(0);
-  const modules = [
-    'Number system, HCF-LCM and Decimal Fractions, Simplification, Percentages',
-    'Profit-Loss and Discounts, Simple - Compound Interest, Averages, Alligations and Mixtures',
-    'Ratios-Proportions ans Variations, Partnership, Time and work, Time-speed and Distance',
-    'Trains-Boats-Streams-Races, Permutation and combination, Probablity, Data Interpretation, Ages',
-    'Blood Relations, Direction sense Test, Series',
-    'Coding and Decoding, Analogy, Seating Arrangement,Data Arrangement',
-    'Clocks, Calendars, syllogisms, Data Sufficiency',
-    'Articles and Prepositions, Subject verb Agreement, Change of speech',
-    'Change of voice, Sentence Correction, Sentence Completion',
-    'Cloze Test, Ordering of Sentences, Reading Comprehension, Critical Reasoning',
-  ];
 
   const [inputValues, setInputValues] = useState(Array(modules.length).fill(0));
   const [time, setTime] = useState();

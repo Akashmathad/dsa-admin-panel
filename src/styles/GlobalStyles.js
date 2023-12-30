@@ -259,6 +259,12 @@ html{
   letter-spacing: 1px;
 }
 
+.heading-secondary{
+  color: var(--color-brand-500);
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
 //general styles
 
 .container{
