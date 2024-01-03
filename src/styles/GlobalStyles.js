@@ -238,6 +238,7 @@ html{
   cursor: pointer;
   transition: all 0.3s;
   font-family: inherit;
+  color: var(--color-grey-50);
 
   &:hover{
     background-color: var(--color-brand-500);
@@ -254,7 +255,7 @@ html{
 
 .heading-primary{
   color: var(--color-brand-500);
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   font-weight: 500;
   letter-spacing: 1px;
 }

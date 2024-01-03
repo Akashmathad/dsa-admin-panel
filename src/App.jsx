@@ -9,6 +9,8 @@ import AptitudePage from './pages/AptitudePage';
 import CreateContest from './features/aptitude/CreateContest';
 import AvailableContests from './features/aptitude/AvailableContests';
 import QuestionsList from './features/aptitude/QuestionsList';
+import AptitudeResults from './features/results/AptitudeResults';
+import DSAResults from './features/results/DSAResults';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
           />
           <Route path="/aptitude/questionReview" element={<QuestionsList />} />
           <Route path="/results" element={<ResultsPage />} />
+          <Route path="/results/aptitudeResult" element={<AptitudeResults />} />
+          <Route path="/results/dsaResult" element={<DSAResults />} />
           <Route path="/others" element={<OthersPage />} />
         </Route>
       </Routes>
