@@ -11,6 +11,9 @@ import AvailableContests from './features/aptitude/AvailableContests';
 import QuestionsList from './features/aptitude/QuestionsList';
 import AptitudeResults from './features/results/AptitudeResults';
 import DSAResults from './features/results/DSAResults';
+import AddMember from './features/others/AddMember';
+import DeleteMember from './features/others/DeleteMember';
+import Feedback from './features/others/Feedback';
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
           <Route path="/results/aptitudeResult" element={<AptitudeResults />} />
           <Route path="/results/dsaResult" element={<DSAResults />} />
           <Route path="/others" element={<OthersPage />} />
+          <Route path="/others/feedback" element={<Feedback />} />
+          <Route path="/others/addMember" element={<AddMember />} />
+          <Route path="/others/deleteMember" element={<DeleteMember />} />
         </Route>
       </Routes>
     </BrowserRouter>

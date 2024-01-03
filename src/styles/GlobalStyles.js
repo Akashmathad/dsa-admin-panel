@@ -295,6 +295,85 @@ html{
   }
 }
 
+//logins and signups
+
+.popup-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-box{
+  padding: 2.4rem 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    background-color: var(--color-grey-100);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    position: relative; 
+}
+
+.popup-heading {
+    font-size: 3.6rem;
+    font-weight: 600;
+    color: var(--color-brand-500);
+    letter-spacing: 1.5px;
+  }
+
+
+  .popup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .input-details-box {
+    position: relative;
+  }
+
+  .popup-icons {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--color-brand-600);
+    font-size: 2.4rem;
+  }
+
+  .input-details {
+    width: 42rem;
+    padding: 1rem 4.8rem;
+    height: 4.4rem;
+    font-family: inherit;
+    font-size: 1.8rem;
+    color: inherit;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-grey-50);
+    border: 1px solid var(--color-grey-100);
+    border-radius: var(--border-radius-md);
+    transition: all 0.2s;
+    outline: none;
+
+    &:hover,
+    &:active,
+    &:focus {
+      border: 1px solid var(--color-grey-300);
+    }
+  }
+
+  .buttons-box{
+    padding: 1.2rem 3.2rem 0 3.2rem;
+    width: 100%;
+    display: flex;
+  gap: 2.4rem;
+  }
+
 `;
 
 export default GlobalStyles;
