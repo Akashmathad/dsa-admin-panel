@@ -41,7 +41,7 @@ function AptitudeStats({ contestName, contestNumber, setOpenStats }) {
               <p className="student-number">120</p>
             </div>
             <div className="branch-box">
-              <p className="student-heading">AV</p>
+              <p className="student-heading">AE</p>
               <p className="student-number">120</p>
             </div>
           </div>

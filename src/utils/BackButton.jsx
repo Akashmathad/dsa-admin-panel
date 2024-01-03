@@ -1,13 +1,13 @@
 import { useNavigate } from 'react-router-dom';
 
-function BackButton() {
+function BackButton({ children }) {
   const navigate = useNavigate();
   function goBack() {
     navigate(-1);
   }
   return (
     <button className="btn" onClick={goBack}>
-      Back
+      {children ? children : 'Back'}
     </button>
   );
 }

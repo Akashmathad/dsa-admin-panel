@@ -136,7 +136,9 @@ function Question({ question, index, handleDelete }) {
           index={index}
           handleDelete={handleDelete}
           setOpenDelete={setOpenDelete}
-        />
+        >
+          <p>Are you sure, you want to delete this question from Database ?</p>
+        </DeleteNotification>
       )}
     </div>
   );

@@ -305,7 +305,7 @@ html{
 }
 
 .popup-box{
-  padding: 2.4rem 3.2rem;
+  padding: 3.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -328,7 +328,7 @@ html{
   .popup-form {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.2rem;
   }
 
   .input-details-box {

@@ -2,17 +2,19 @@ import { styled } from 'styled-components';
 import { FaRegUser } from 'react-icons/fa';
 import { RiUserAddLine } from 'react-icons/ri';
 import { CgLock } from 'react-icons/cg';
-import { MdOutlineAdminPanelSettings } from 'react-icons/md';
 import { CgLockUnlock } from 'react-icons/cg';
 import { MdKey } from 'react-icons/md';
 import { useContext, useState } from 'react';
 // import { AppContext } from '../App';
 import { useForm } from 'react-hook-form';
+import BackButton from '../../utils/BackButton';
+
 // import Loader from './Loader';
 
 function AddMember() {
   const [loader, setLoader] = useState(false);
   const { register, handleSubmit } = useForm();
+
   // const { setOpenAddMember, handleToastSuccess, handleToastFail } =
   //   useContext(AppContext);
 
@@ -54,6 +56,9 @@ function AddMember() {
 
   return (
     <AddMemberContainer className="popup-container">
+      <div className="back-btn-top">
+        <BackButton />
+      </div>
       <div className="popup-box">
         <h3 className="popup-heading">Member Details</h3>
         <form onSubmit={handleSubmit(onSubmit)} className="popup-form">
@@ -102,21 +107,6 @@ function AddMember() {
           </div>
 
           <div className="input-details-box">
-            <MdOutlineAdminPanelSettings className="popup-icons" />
-            <select className="input-details" {...register('admin')}>
-              <option value="" hidden>
-                Admin access
-              </option>
-              <option value={true} className="input-details">
-                Yes
-              </option>
-              <option value={false} className="input-details">
-                No
-              </option>
-            </select>
-          </div>
-
-          <div className="input-details-box">
             <CgLock className="popup-icons" />
             <input
               {...register('password')}
@@ -138,23 +128,11 @@ function AddMember() {
             />
           </div>
 
-          <div className="buttons-box">
-            <button
-              className="btn cancel-btn"
-              type="button"
-              onClick={(e) => {
-                e.preventDefault();
-                // setOpenAddMember(false);
-              }}
-            >
-              Cancel
-            </button>
-            {loader ? (
-              <div className="btn add-member-btn">{/* <Loader /> */}</div>
-            ) : (
-              <input className="btn add-member-btn" type="submit" />
-            )}
-          </div>
+          {loader ? (
+            <div className="btn add-member-btn">{/* <Loader /> */}</div>
+          ) : (
+            <input className="btn add-member-btn" type="submit" />
+          )}
         </form>
       </div>
     </AddMemberContainer>
@@ -168,18 +146,6 @@ const AddMemberContainer = styled.div`
 
     &:hover {
       background-color: var(--color-brand-600);
-    }
-  }
-
-  .cancel-btn {
-    background-color: var(--color-grey-50);
-    box-shadow: inset 0 0 0 0.5px var(--color-brand-600);
-    color: var(--color-grey-700);
-    width: 100%;
-
-    &:hover {
-      background-color: var(--color-brand-500);
-      color: var(--color-grey-50);
     }
   }
 `;

@@ -1,5 +1,5 @@
 import { styled } from 'styled-components';
-function DeleteNotification({ index, handleDelete, setOpenDelete }) {
+function DeleteNotification({ index, handleDelete, setOpenDelete, children }) {
   return (
     <DeleteNotificationContainer
       style={{
@@ -7,7 +7,7 @@ function DeleteNotification({ index, handleDelete, setOpenDelete }) {
           index % 2 === 0 ? 'var(--color-grey-100)' : 'var(--color-grey-50)',
       }}
     >
-      <p>Are you sure, you want to delete this question from Database ?</p>
+      {children}
       <div className="buttons">
         <button className="btn btn-no" onClick={() => setOpenDelete(false)}>
           No
